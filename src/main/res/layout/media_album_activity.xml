@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lsq_color_black"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lsq_topBar"
+        layout="@layout/album_head_layout" />
+
+    <org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator
+        android:id="@+id/lsq_media_album_tab"
+        app:default_display_counts="1"
+        app:text_size="15"
+        app:high_light_text_color="#CC0000"
+        app:normal_text_color="#6E7187"
+        app:line_color="#00000000"
+        app:line_width="48dp"
+        app:line_size="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator>
+
+    <org.lasque.tusdk.core.view.widget.TuSdkViewPager
+        android:id="@+id/lsq_media_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lsq_color_transparent"
+        android:overScrollMode="never" />
+</LinearLayout>

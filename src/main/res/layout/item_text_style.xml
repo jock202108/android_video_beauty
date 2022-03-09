@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_text_style"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:minWidth="64dp"
+    android:background="@drawable/shape_text_style_item"
+    android:paddingHorizontal="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_height="27dp">
+
+    <TextView
+        android:id="@+id/tv_text_style"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        android:textColor="@color/lsq_color_white"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

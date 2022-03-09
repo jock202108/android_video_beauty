@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_pop_up_window_bg"
+    android:orientation="vertical">
+
+
+    <org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator
+        android:id="@+id/tab_layout"
+        app:default_display_counts="2"
+        app:text_size="15"
+        app:high_light_text_color="@color/lsq_color_white"
+        app:normal_text_color="#4F4F4F"
+        app:fixed_width="true"
+        app:line_color="@color/lsq_color_white"
+        app:line_width="500dp"
+        app:line_size="2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+    </org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator>
+
+
+    <org.lasque.tusdk.core.view.widget.TuSdkViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/lsq_color_transparent"
+        android:overScrollMode="never" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/lsq_color_black"
+              android:orientation="vertical">
+    <!--特效控制content-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/lsq_editor_effect_content"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        >
+    </androidx.viewpager.widget.ViewPager>
+
+<View
+    android:layout_marginTop="21dp"
+    android:layout_width="match_parent"
+    android:background="#1F1F1F"
+    android:layout_height="0.5dp"></View>
+    <!--底部导航-->
+    <org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator
+        android:id="@+id/lsq_effect_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        app:item_width="66"
+        app:line_size="0"
+        app:text_size="12"
+        app:line_width="0dp"
+        app:line_color="@color/lsq_color_transparent"
+        app:default_display_counts="3"
+        app:normal_text_color="#8A8A8A"
+        app:high_light_text_color="@color/lsq_color_white"
+        ></org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator>
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- color -->
+    <color name="lsq_color_white">#ffffff</color>
+    <color name="lsq_color_black">#000000</color>
+    <color name="lsq_edit_player_color">#181818</color>
+
+
+
+    <color name="lsq_color_red">#ff0000</color>
+    <color name="lsq_color_gray">#707070</color>
+    <color name="lsq_color_orange">#ff6633</color>
+    <color name="lsq_color_transparent">#00000000</color>
+
+    <!-- alpha -->
+    <color name="lsq_alpha_black_99">#99000000</color>
+    <color name="lsq_alpha_black_66">#66000000</color>
+    <color name="lsq_alpha_black_B4">#B4000000</color>
+    <color name="lsq_alpha_black_CO">#C0000000</color>
+
+    <color name="lsq_alpha_black_7f">#7F000000</color>
+
+    <color name="lsq_alpha_black_26">#26000000</color>
+
+    <color name="lsq_alpha_white_4d">#4dffffff</color>
+    <color name="lsq_alpha_white_26">#26ffffff</color>
+    <color name="lsq_alpha_white_66">#66ffffff</color>
+    <color name="lsq_alpha_white_99">#99ffffff</color>
+    <color name="lsq_alpha_white_00">#00ffffff</color>
+    <color name="lsq_alpha_white_33">#33ffffff</color>
+
+    <!-- split -->
+    <color name="lsq_split_bg">#d7d8dc</color>
+    <color name="lsq_split_cell">#FF3e3c41</color>
+
+    <!-- navigatorBar -->
+    <color name="lsq_navigator_bg">#000000</color>
+    <color name="lsq_navigator_title">#ffffff</color>
+    <color name="lsq_navigator_button_title">#ffffff</color>
+    <color name="lsq_navigator_button_right_title">#ff6633</color>
+    <color name="lsq_navigator_split">#66000000</color>
+
+    <!-- text -->
+    <color name="lsq_link_action">#287dfa</color>
+
+    <!-- actionsheet -->
+    <color name="lsq_actionsheet_mask_bg">#66000000</color>
+    <color name="lsq_actionsheet_title_color">#666666</color>
+    <color name="lsq_actionsheet_boutton_bg">#ddffffff</color>
+    <color name="lsq_actionsheet_boutton_bg_selected">#ddcccccc</color>
+    <color name="lsq_actionsheet_text_color">#ff287dfa</color>
+    <color name="lsq_actionsheet_text_stress">#fff6393f</color>
+
+    <!-- 聚焦框颜色 focus -->
+    <color name="lsq_focus_normal">#fff</color>
+    <color name="lsq_focus_succeed">#0bff45</color>
+    <color name="lsq_focus_failed">#0b72ff</color>
+    <color name="lsq_focus_face">#ffc000</color>
+
+    <!-- backgroud -->
+    <color name="lsq_background_default">#2e2c30</color>
+    <color name="lsq_background_default_cell">#353338</color>
+    <color name="lsq_background_default_header">#B4262625</color>
+    <color name="lsq_background_album">#1e1c1f</color>
+    <color name="lsq_background_multi_album">#ffffff</color>
+    <color name="lsq_background_album_cell">#353338</color>
+    <color name="lsq_background_photo_cell">#2e2c30</color>
+    <color name="lsq_background_option_bar">#1e1c1f</color>
+    <color name="lsq_background_camera">#403e43</color>
+    <color name="lsq_background_camera_bar_alpha">#59403e43</color>
+    <color name="lsq_background_editor">#2e2c30</color>
+    <color name="lsq_background_editor_bottom_bar">#403e43</color>
+    <color name="lsq_background_editor_compoent">#000000</color>
+
+    <color name="lsq_background_record_speed">#B3686868</color>
+
+    <!-- text -->
+    <color name="lsq_text_group_header">#9fa0a4</color>
+    <color name="lsq_text_time">#9fa0a0</color>
+
+    <!-- seekbar -->
+    <color name="lsq_seekbar_drag_color">#FFFFFF</color>
+    <color name="lsq_seekbar_view_color">#20FFFFFF</color>
+    <color name="lsq_filter_config_highlight">#FFFFFF</color>
+
+    <!-- video editor-->
+    <color name="lsq_background_entry_default">#FFFFFF</color>
+    <color name="lsq_record_title_color">#ffffff</color>
+
+    <color name="lsq_clip_title_color">#333333</color>
+    <color name="lsq_filter_title_color">#f4a11a</color>
+    <color name="lsq_filter_title_color_alpha_20">#33f4a11a</color>
+    <color name="lsq_filter_title_default_color">#9fa0a0</color>
+
+    <color name="lsq_filter_title_unselected_color">#d9d9d9</color>
+    <color name="lsq_progress_interupt_color">#FFFFFF</color>
+    <color name="shadow_color">#231815</color>
+    <!-- camera&&Recording-->
+    <color name="lsq_capture_selected">#f6a623</color>
+    <color name="lsq_capture_unselected">#fff</color>
+    <color name="lsq_innerRound_unselected_color">#7fffffff</color>
+    <color name="lsq_innerRound_selected_color">#f6a623</color>
+    <color name="lsq_ring_color">#ffffff</color>
+    <color name="lsq_color_semitransparent">#7f000000</color>
+    <color name="lsq_dubbing_unselected_color">#CCCCCC</color>
+    <color name="lsq_dubbing_bg_color">#F5F5F5</color>
+    <color name="lsq_dubbing_record_selected_color">#c17111</color>
+    <color name="lsq_voice_record_time_remaining_color">#4a4a4a</color>
+    <color name="lsq_color_api_gray">#c0c0c0</color>
+    <color name="lsq_color_api_button">#ffcc00</color>
+    <color name="lsq_dialog_divider">#DFE1EA</color>
+
+    <!-- 场景特效编辑时颜色 -->
+
+    <color name="lsq_scence_effect_color_LiveShake01">#E64774FE</color>
+    <color name="lsq_scence_effect_color_LiveMegrim01">#E6BA4FCA</color>
+    <color name="lsq_scence_effect_color_EdgeMagic01">#E6F5AC39</color>
+    <color name="lsq_scence_effect_color_LiveFancy01_1">#E66159BE</color>
+    <color name="lsq_scence_effect_color_LiveSoulOut01">#E66F40ED</color>
+    <color name="lsq_scence_effect_color_LiveSignal01">#E6FFEC55</color>
+    <color name="lsq_scence_effect_color_LiveLightning01">#E68E5AEB</color>
+    <color name="lsq_scence_effect_color_LiveXRay01">#E627ACA2</color>
+    <color name="lsq_scence_effect_color_LiveHeartbeat01">#E68B5CE0</color>
+    <color name="lsq_scence_effect_color_LiveMirrorImage01">#E630C88B</color>
+    <color name="lsq_scence_effect_color_LiveSlosh01">#E6D7E35C</color>
+    <color name="lsq_scence_effect_color_LiveOldTV01">#E699CB62</color>
+    <color name="lsq_scence_effect_color_title">#999999</color>
+
+    <!-- v2.0 魔法特效 TimeLineView 编辑色 -->
+    <color name="lsq_margic_effect_color_snow01">#b3F6953E</color>
+    <color name="lsq_margic_effect_color_Music">#b3BA4FCA</color>
+    <color name="lsq_margic_effect_color_Star">#b3F5AC39</color>
+    <color name="lsq_margic_effect_color_Love">#b36159BE</color>
+    <color name="lsq_margic_effect_color_Bubbles">#b36F40ED</color>
+    <color name="lsq_margic_effect_color_Surprise">#b3FFEC55</color>
+    <color name="lsq_margic_effect_color_Fireball">#b3ffcb5b</color>
+    <color name="lsq_margic_effect_color_Flower">#b38E5AEB</color>
+    <color name="lsq_margic_effect_color_Money">#b3fce77b</color>
+    <color name="lsq_margic_effect_color_Magic">#b327ACA2</color>
+    <color name="lsq_margic_effect_color_Burning">#b32CC9DD</color>
+
+    <!-- v3.4.1 转场特效 TimeLineView 编辑色 -->
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypeFadeIn">#B30AF047</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypeFlyIn">#B30AF0C2</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypePullInRight">#B34C61C2</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypePullInLeft">#B3B49ED5</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypePullInTop">#B3E158FF</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypePullInBottom">#B35A2368</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypeSpreadIn">#B3A203C4</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypeFlashLight">#B3D496E4</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypeFlip">#B36D4F74</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypeFocusOut">#B3D2B9DD</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypeFocusIn">#B3FF05A2</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypeStackUp">#B3EB234A</color>
+    <color name="lsq_scence_effect_color_TuSDKMediaTransitionTypeZoom">#B3D66047</color>
+
+    <color name="lsq_magic_size_baground">#eeeeee</color>
+
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#455A64</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="lsq_line_gray1">#B6B6B6</color>
+    <color name="lsq_light_blue">#016EDC</color>
+    <color name="lsq_button_bg_blue">#0066FF</color>
+    <color name="lsq_secondary">#CC0000</color>
+
+    <!-- 3.0 -->
+    <color name="lsq_widget_speedbar_bg">#77555555</color>
+    <color name="lsq_widget_speedbar_button_bg">#ffcc00</color>
+    <color name="lsq_widget_record_button_circle">#99ffffff</color>
+    <color name="lsq_widget_record_button_center">#fe3a3a</color>
+    <color name="lsq_widget_sticker_cell_bg">#ffcc00</color>
+
+    <!-- 编辑-->
+    <color name="lsq_editor_cut_select_font_color">#ffcc00</color>
+    <color name="lsq_editor_cut_select_button_background">#80333333</color>
+    <color name="lsq_editor_next_button_background">#33000000</color>
+    <color name="lsq_editor_bottom_tab_text_color">#ffffff</color>
+    <color name="lsq_editor_video_background">#121212</color>
+    <color name="lsq_editor_video_background_comp">#1f1f1f</color>
+    
+    <!--文字-->
+    <color name="color_ffffff">#ffffffff</color>
+    <color name="color_000000">#ff000000</color>
+    <color name="color_3897F0">#ff3897F0</color>
+    <color name="color_70C050">#ff70C050</color>
+    <color name="color_FDCB5C">#ffFDCB5C</color>
+    <color name="color_FD8D32">#ffFD8D32</color>
+    <color name="color_ED4956">#ffED4956</color>
+    <color name="color_D10869">#ffD10869</color>
+    <color name="color_A306BA">#ffA306BA</color>
+    <color name="color_ED0013">#ffED0013</color>
+    <color name="color_ED858E">#ffED858E</color>
+    <color name="color_FFD2D3">#ffFFD2D3</color>
+    <color name="color_FFDBB4">#ffFFDBB4</color>
+    <color name="color_FFC382">#ffFFC382</color>
+    <color name="color_D28E46">#ffD28E46</color>
+    <color name="color_996438">#ff996438</color>
+    <color name="color_432323">#ff432323</color>
+    <color name="color_1C4A29">#ff1C4A29</color>
+    <color name="color_262626">#ff262626</color>
+    <color name="color_363636">#ff363636</color>
+    <color name="color_555555">#ff555555</color>
+    <color name="color_737373">#ff737373</color>
+    <color name="color_999999">#ff999999</color>
+    <color name="color_C7C7C7">#ffC7C7C7</color>
+    <color name="color_DBDBDB">#ffDBDBDB</color>
+    <color name="color_EFEFEF">#ffEFEFEF</color>
+    <color name="lsq_range_red">#FF1010</color>
+    <color name="lsq_center_red_cover">#66FF1010</color>
+    <color name="color_C4C4C4">#C4C4C4</color>
+    <color name="color_6E7187">#6E7187</color>
+    <color name="color_232255">#232255</color>
+    <color name="color_111925">#111925</color>
+    <color name="color_1589FE">#1589FE</color>
+    <color name="color_DFE1EA">#DFE1EA</color>
+    <color name="color_4E536F">#4E536F</color>
+    <color name="color_1D2834">#1D2834</color>
+    <color name="color_121921">#121921</color>
+    <color name="color_787a8c">#787A8C</color>
+    <color name="color_373A4E">#373A4E</color>
+    <color name="color_E8E9EF">#E8E9EF</color>
+</resources>

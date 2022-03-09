@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/voice_over_layout"
+    android:layout_height="wrap_content"
+    android:background="@color/lsq_color_black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <org.lasque.twsdkvideo.video_beauty.views.editor.TuSdkMovieScrollPlayLineView
+        android:id="@+id/lsq_editor_scene_play_range"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></org.lasque.twsdkvideo.video_beauty.views.editor.TuSdkMovieScrollPlayLineView>
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/audio_recording"
+        android:layout_marginTop="19dp"
+        android:visibility="invisible"
+        app:lottie_loop="true"
+        android:layout_width="134dp"
+        android:layout_height="30dp"
+        app:lottie_fileName="sound_voice.json"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lsq_editor_scene_play_range"
+        ></com.airbnb.lottie.LottieAnimationView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lsq_editor_audio_record_type_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/tusdk_edite_cut_speedbar_bg"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintTop_toBottomOf="@id/lsq_editor_scene_play_range">
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:tag="0"
+            android:text="@string/lsq_monster"
+            android:textAlignment="center"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="13sp" />
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:tag="1"
+            android:text="@string/lsq_uncle"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="13sp" />
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/tusdk_view_widget_speed_button_bg"
+            android:tag="2"
+            android:text="@string/lsq_normal"
+            android:textColor="@color/lsq_color_black"
+            android:textSize="13sp" />
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:tag="3"
+            android:text="@string/lsq_girl"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="13sp" />
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:tag="4"
+            android:text="@string/lsq_lolita"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/lsq_start_audiotrecord_hint"
+        android:textColor="@color/lsq_color_white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lsq_editor_audio_record_type_bar" />
+
+
+    <!--录制按钮-->
+    <ImageButton
+        android:id="@+id/lsq_recordButton"
+        android:layout_width="@dimen/lsq__space_64"
+        android:layout_height="@dimen/lsq__space_64"
+        android:layout_marginTop="94dp"
+        android:background="@drawable/tusdk_view_widget_record_unpressed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lsq_editor_scene_play_range" />
+
+
+    <!--删除按钮-->
+    <ImageView
+        android:id="@+id/lsq_record_deleted"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/music_edit_ic"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/lsq_recordButton"
+        app:layout_constraintStart_toEndOf="@id/lsq_recordButton"
+        app:layout_constraintTop_toTopOf="@id/lsq_recordButton" />
+
+
+
+
+    <!--    checkbox_unselected_icon-->
+    <ImageView
+        android:id="@+id/checkbox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="184.5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="@dimen/lsq__space_25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/checkbox_selected_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lsq_editor_scene_play_range"></ImageView>
+
+
+    <TextView
+        android:id="@+id/checkbox_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/lsq_color_white"
+        android:text="@string/keep_original_sound"
+        app:layout_constraintBottom_toBottomOf="@id/checkbox"
+        app:layout_constraintStart_toEndOf="@id/checkbox"
+        app:layout_constraintTop_toTopOf="@id/checkbox"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

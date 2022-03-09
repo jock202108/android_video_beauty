@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/lsq_color_black"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content"
+   >
+
+    <TextView
+        android:id="@+id/lsq_next"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tusdk_edite_next_btn_bg"
+        android:gravity="center"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="21dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/lsq_next"
+        android:includeFontPadding="false"
+        android:textColor="@color/lsq_color_white"
+        android:textSize="13sp" />
+
+
+</FrameLayout>

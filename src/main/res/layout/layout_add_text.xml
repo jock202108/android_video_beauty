@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#B31B1B1B">
+
+    <TextView
+        android:id="@+id/done_addtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Done"
+        android:textColor="@color/lsq_color_white" />
+
+    <org.lasque.twsdkvideo.video_beauty.views.TuSdkTextView
+        android:id="@+id/mTvEffectsText"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:textSize="25sp"
+        android:focusable="true"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="6dp"
+        android:background="@null"
+        android:hint="nih"
+        android:textColor="@color/lsq_color_white"
+        android:textColorHint="@android:color/transparent"
+        android:focusableInTouchMode="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/mBottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_progress"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_marginHorizontal="18dp"
+            android:layout_height="66dp">
+            <TextView
+                android:id="@+id/progress_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/lsq_color_white"
+                android:text="Width"
+                android:includeFontPadding="false"
+                android:textSize="11sp"/>
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_toRightOf="@id/progress_name"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:maxHeight="4dp"
+                android:max="100"
+                android:progress="30"
+                android:background="@null"
+                android:progressDrawable="@drawable/seek_bar_bg"
+                android:thumb="@drawable/seek_bar_thumb"/>
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_add_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+            <RelativeLayout
+                android:id="@+id/rl_rest"
+              android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="40dp">
+                <ImageView
+                    android:id="@+id/ic_delete"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="16.5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_rest"/>
+               <View
+                   android:layout_width="0.5dp"
+                   android:layout_height="24dp"
+                   android:background="#8a8a8a"
+                   android:layout_toEndOf="@id/ic_delete"
+                   android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rl_rest"
+                android:id="@+id/rv_style_detail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+   
+</RelativeLayout>

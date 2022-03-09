@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<TextView
+    android:id="@+id/done_text"
+    android:text="Done"
+    android:gravity="right"
+    android:paddingRight="18dp"
+    android:textColor="@color/lsq_color_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></TextView>
+
+    <View
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+    <include layout="@layout/edit_music_layout" />
+
+    <include layout="@layout/lsq_editor_component_trim_music_bottom" />
+
+    <include layout="@layout/lsq_voice_volume_config_layout" />
+
+</LinearLayout>

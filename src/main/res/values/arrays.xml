@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="circular_custom_color_sequence">
+        <item>@color/lsq_color_white</item>
+        <item>@color/lsq_color_white</item>
+        <item>@color/lsq_color_white</item>
+        <item>@color/lsq_color_white</item>
+    </array>
+
+</resources>

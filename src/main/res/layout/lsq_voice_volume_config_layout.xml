@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:id="@+id/lsq_voice_volume_config_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_pop_up_window_bg"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+
+    <!-- 配音音量调节参数 -->
+    <include
+        android:id="@+id/lsq_voice_volume_config_view1"
+        layout="@layout/tusdk_config_view"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="41dp"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@id/music_recycler"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/lsq_color_black"
+        android:layout_width="match_parent"
+        android:layout_height="53dp">
+
+
+        <ImageView
+            android:id="@+id/close_pop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/close_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"></ImageView>
+
+        <ImageView
+            android:id="@+id/sure_icon"
+            app:layout_constraintTop_toTopOf="@id/close_pop"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="18dp"
+            app:layout_constraintBottom_toBottomOf="@id/close_pop"
+            android:background="@drawable/sure_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"></ImageView>
+
+        <TextView
+            android:text="@string/volume"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/close_pop"
+            app:layout_constraintBottom_toBottomOf="@id/close_pop"
+            android:textSize="13sp"
+            android:textColor="@color/lsq_color_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,717 @@
+<resources  xmlns:tools="http://schemas.android.com/tools">
+    <string name="lsq_trim_16_9" translatable="false">16:9</string>
+    <string name="lsq_trim_3_2" translatable="false">3:2</string>
+    <string name="lsq_trim_4_3" translatable="false">4:3</string>
+    <string name="lsq_trim_1_1" translatable="false">1:1</string>
+    <string name="lsq_trim_3_4" translatable="false">3:4</string>
+    <string name="lsq_trim_2_3" translatable="false">2:3</string>
+    <string name="lsq_trim_9_16" translatable="false">9:16</string>
+    <string name="lsq_eyelash_0" translatable="false">0</string>
+    <string name="lsq_eyelash_1" translatable="false">1</string>
+    <string name="lsq_eyelash_2" translatable="false">2</string>
+    <string name="lsq_eyelash_3" translatable="false">3</string>
+    <string name="lsq_eyelash_4" translatable="false">4</string>
+    <string name="lsq_eyelash_5" translatable="false">5</string>
+    <string name="lsq_eyelash_6" translatable="false">6</string>
+    <string name="lsq_eyelash_7" translatable="false">7</string>
+    <string name="lsq_eyelash_8" translatable="false">8</string>
+    <string name="lsq_eyelash_9" translatable="false">9</string>
+    <string name="lsq_eyelash_10" translatable="false">10</string>
+    <string name="lsq_eyelash_11" translatable="false">11</string>
+    <string name="lsq_eyelash_12" translatable="false">12</string>
+    <string name="lsq_eyelash_13" translatable="false">13</string>
+    <string name="lsq_eyelash_14" translatable="false">14</string>
+    <string name="lsq_eyelash_15" translatable="false">15</string>
+    <string name="lsq_eyelash_16" translatable="false">16</string>
+    <string name="lsq_eyelash_17" translatable="false">17</string>
+    <string name="lsq_eyelash_18" translatable="false">18</string>
+    <string name="lsq_eyelash_19" translatable="false">19</string>
+    <string name="lsq_eyelash_20" translatable="false">20</string>
+    <string name="lsq_eyelash_21" translatable="false">21</string>
+    <string name="lsq_eyelash_22" translatable="false">22</string>
+    <string name="lsq_eyelash_23" translatable="false">23</string>
+    <string name="lsq_eyelash_24" translatable="false">24</string>
+    <string name="lsq_eyelash_25" translatable="false">25</string>
+    <string name="lsq_eyelash_26" translatable="false">26</string>
+    <string name="lsq_eyelash_27" translatable="false">27</string>
+    <string name="lsq_eyelash_28" translatable="false">28</string>
+
+    <string name="lsq_blush_a" translatable="false">0</string>
+    <string name="lsq_blush_b" translatable="false">1</string>
+    <string name="lsq_blush_c" translatable="false">2</string>
+    <string name="lsq_blush_d" translatable="false">3</string>
+    <string name="lsq_blush_e" translatable="false">4</string>
+    <string name="lsq_blush_f" translatable="false">5</string>
+    <string name="lsq_blush_g" translatable="false">6</string>
+    <string name="lsq_blush_h" translatable="false">7</string>
+    <string name="lsq_blush_i" translatable="false">8</string>
+    <string name="lsq_blush_j" translatable="false">9</string>
+    <string name="lsq_blush_k" translatable="false">10</string>
+    <string name="lsq_blush_l" translatable="false">11</string>
+    <string name="lsq_blush_m" translatable="false">12</string>
+    <string name="lsq_blush_n" translatable="false">13</string>
+    <string name="lsq_blush_p" translatable="false">14</string>
+    <string name="lsq_blush_x" translatable="false">15</string>
+
+
+    <string name="lsq_eyeshadow_0" translatable="false">0</string>
+    <string name="lsq_eyeshadow_1" translatable="false">1</string>
+    <string name="lsq_eyeshadow_2" translatable="false">2</string>
+    <string name="lsq_eyeshadow_3" translatable="false">3</string>
+    <string name="lsq_eyeshadow_4" translatable="false">4</string>
+    <string name="lsq_eyeshadow_5" translatable="false">5</string>
+    <string name="lsq_eyeshadow_6" translatable="false">6</string>
+    <string name="lsq_eyeshadow_7" translatable="false">7</string>
+    <string name="lsq_eyeshadow_8" translatable="false">8</string>
+    <string name="lsq_eyeshadow_9" translatable="false">9</string>
+    <string name="lsq_eyeshadow_10" translatable="false">10</string>
+    <string name="lsq_eyeshadow_11" translatable="false">11</string>
+    <string name="lsq_eyeshadow_12" translatable="false">12</string>
+    <string name="lsq_eyeshadow_13" translatable="false">13</string>
+    <string name="lsq_eyeshadow_14" translatable="false">14</string>
+    <string name="lsq_eyeshadow_15" translatable="false">15</string>
+    <string name="lsq_eyeshadow_16" translatable="false">16</string>
+    <string name="lsq_eyeshadow_17" translatable="false">17</string>
+    <string name="lsq_eyeshadow_18" translatable="false">18</string>
+    <string name="lsq_eyeshadow_19" translatable="false">19</string>
+    <string name="lsq_eyeshadow_20" translatable="false">20</string>
+    <string name="lsq_eyeshadow_21" translatable="false">21</string>
+    <string name="lsq_eyeshadow_22" translatable="false">22</string>
+    <string name="lsq_eyeshadow_23" translatable="false">23</string>
+
+
+    <string name="lsq_eyeline_0" translatable="false">0</string>
+    <string name="lsq_eyeline_1" translatable="false">1</string>
+    <string name="lsq_eyeline_2" translatable="false">2</string>
+    <string name="lsq_eyeline_3" translatable="false">3</string>
+    <string name="lsq_eyeline_4" translatable="false">4</string>
+    <string name="lsq_eyeline_5" translatable="false">5</string>
+    <string name="lsq_eyeline_6" translatable="false">6</string>
+    <string name="lsq_eyeline_7" translatable="false">7</string>
+    <string name="lsq_eyeline_8" translatable="false">8</string>
+    <string name="lsq_eyeline_9" translatable="false">9</string>
+    <string name="lsq_eyeline_10" translatable="false">10</string>
+    <string name="lsq_eyeline_11" translatable="false">11</string>
+    <string name="lsq_eyeline_12" translatable="false">12</string>
+    <string name="lsq_eyeline_13" translatable="false">13</string>
+    <string name="lsq_eyeline_14" translatable="false">14</string>
+    <string name="lsq_eyeline_15" translatable="false">15</string>
+
+
+    <string name="lsq_facial_01" translatable="false">01</string>
+    <string name="lsq_facial_02" translatable="false">02</string>
+    <string name="lsq_facial_03" translatable="false">03</string>
+    <string name="lsq_facial_04" translatable="false">04</string>
+    <string name="lsq_facial_05" translatable="false">05</string>
+    <string name="lsq_facial_06" translatable="false">06</string>
+    <string name="lsq_facial_07" translatable="false">07</string>
+    <string name="lsq_facial_08" translatable="false">08</string>
+    <string name="lsq_facial_09" translatable="false">09</string>
+    <string name="lsq_facial_10" translatable="false">10</string>
+    <string name="lsq_facial_11" translatable="false">11</string>
+    <string name="lsq_facial_12" translatable="false">12</string>
+    <string name="lsq_facial_13" translatable="false">13</string>
+    <string name="lsq_facial_14" translatable="false">14</string>
+
+    <string name="lsq_camera_speed_rate_slow" translatable="false">0.3x</string>
+    <string name="lsq_camera_speed_rate_slow2" translatable="false">0.5x</string>
+    <string name="lsq_camera_speed_rate_normal" translatable="false">1x</string>
+    <string name="lsq_camera_speed_rate_fast" translatable="false">2x</string>
+    <string name="lsq_camera_speed_rate_fast2" translatable="false">3x</string>
+
+
+    <string name="lsq_filter_set_smoothing" >Smooth</string>
+    <string name="lsq_filter_set_whitening">White</string>
+    <string name="lsq_filter_set_mixied">Mix</string>
+    <string name="lsq_filter_set_vignette">Vignette</string>
+    <string name="lsq_filter_set_saturation">Saturation</string>
+    <!-- 滤镜 -->
+    <string name="lsq_filter_None">None</string>
+    <string name="lsq_filter_Original">Original</string>
+    <string name="lsq_filter_Fair01">Fair</string>
+    <string name="lsq_filter_Pink01">Pink</string>
+    <string name="lsq_filter_Forest01">Forest</string>
+    <string name="lsq_filter_Sundown">Sundown</string>
+    <string name="lsq_filter_Sakura">Sakura</string>
+    <string name="lsq_filter_Paul01">Paul</string>
+    <string name="lsq_filter_Lavender">Lavender</string>
+    <string name="lsq_filter_Manhattan">Manhattan</string>
+    <string name="lsq_filter_Dusk">Dus</string>
+    <string name="lsq_filter_TinyTimes">Times</string>
+    <string name="lsq_filter_Vivid01">Vivid</string>
+    <string name="lsq_filter_Year1950">1950s</string>
+    <string name="lsq_filter_Missing01">Missing</string>
+    <string name="lsq_filter_Grapefruit01">Grapefruit</string>
+    <string name="lsq_filter_BabyPink001">BabyPink</string>
+<!--   高斯模糊？？-->
+    <string name="lsq_filter_gaosi_01">gaosi</string>
+
+    <string name="lsq_filter_SkinPink010">SkinPink</string>
+    <string name="lsq_filter_SkinJelly010">SkinJelly</string>
+    <string name="lsq_filter_Fair010">Fair</string>
+    <string name="lsq_filter_Pink010">Pink</string>
+    <string name="lsq_filter_Forest010">Forest</string>
+
+    <string name="lsq_filter_SkinPink011">SkinPink</string>
+    <string name="lsq_filter_SkinJelly011">SkinJelly</string>
+    <string name="lsq_filter_Pink011">Pink</string>
+    <string name="lsq_filter_Fair011">Fair</string>
+    <string name="lsq_filter_Forest011">Forest</string>
+    <!-- 滤镜 -->
+    <string name="lsq_filter_nature">Nature</string>
+    <string name="lsq_filter_pink">Pink</string>
+    <string name="lsq_filter_jelly">Jelly</string>
+    <string name="lsq_filter_ruddy">Ruddy</string>
+    <string name="lsq_filter_sugar">Sugar</string>
+    <string name="lsq_filter_honey">Honey</string>
+    <string name="lsq_filter_clear">Clear</string>
+    <string name="lsq_filter_timber">Timber</string>
+    <string name="lsq_filter_whitening">White</string>
+    <string name="lsq_filter_porcelain">Porcelain</string>
+
+    <!-- 短视频编辑滤镜 -->
+    <string name="lsq_filter_Olympus_1">Olympus</string>
+    <string name="lsq_filter_Leica_1">Leica</string>
+    <string name="lsq_filter_Gold_1">Gold</string>
+    <string name="lsq_filter_Cheerful_1">heerful</string>
+    <string name="lsq_filter_White_1">White</string>
+    <string name="lsq_filter_s1950_1">1950s</string>
+    <string name="lsq_filter_Blurred_1">Blurred</string>
+    <string name="lsq_filter_Newborn_1">Newborn</string>
+    <string name="lsq_filter_Fade_1">Fade</string>
+    <string name="lsq_filter_NewYork_1">NewYork</string>
+
+    <!-- 场景特效 -->
+    <string name="lsq_filter_LiveShake01">Shaking</string>
+    <string name="lsq_filter_LiveMegrim01">Megrim</string>
+    <string name="lsq_filter_EdgeMagic01">Magic</string>
+    <string name="lsq_filter_LiveFancy01_1">70s</string>
+    <string name="lsq_filter_LiveSoulOut01">SoulOut</string>
+    <string name="lsq_filter_LiveSignal01">Signal</string>
+    <string name="lsq_filter_LiveLightning01">Lightening</string>
+    <string name="lsq_filter_LiveXRay01">XRay</string>
+    <string name="lsq_filter_LiveHeartbeat01">Heartbeat</string>
+    <string name="lsq_filter_LiveMirrorImage01">Mirror</string>
+    <string name="lsq_filter_LiveSlosh01">Slosh</string>
+    <string name="lsq_filter_LiveOldTV01">OldTV</string>
+
+
+    <!-- 时间特效 -->
+    <string name="lsq_filter_repeated">Repeat</string>
+    <string name="lsq_filter_slowmotion">Slow</string>
+    <string name="lsq_filter_reverse">Reverse</string>
+
+    <!-- v3.4.1 转场特效 -->
+    <string name="lsq_filter_FadeIn">Fade in</string>
+    <string name="lsq_filter_FlashLight">Flash</string>
+    <string name="lsq_filter_Flip">Flip</string>
+    <string name="lsq_filter_FlyIn">Fly in</string>
+    <string name="lsq_filter_FocusIn">Focus in</string>
+    <string name="lsq_filter_FocusOut">Focus out</string>
+    <string name="lsq_filter_PullInTop">Top in</string>
+    <string name="lsq_filter_PullInBottom">Bottom in</string>
+    <string name="lsq_filter_PullInLeft">Left in</string>
+    <string name="lsq_filter_PullInRight">Right in</string>
+    <string name="lsq_filter_SpreadIn">Spread in</string>
+    <string name="lsq_filter_StackUp">Stack up</string>
+    <string name="lsq_filter_Zoom">Zoom</string>
+    <!-- 魔法特效 Code 名称 -->
+    <string name="lsq_filter_snow01">Snow</string>
+    <string name="lsq_filter_Love">Love</string>
+    <string name="lsq_filter_Bubbles">Bubble</string>
+    <string name="lsq_filter_Music">Music</string>
+    <string name="lsq_filter_Star">Star</string>
+    <string name="lsq_filter_Surprise">Surprise</string>
+    <string name="lsq_filter_Flower">Flower</string>
+    <string name="lsq_filter_Magic">Magic</string>
+    <string name="lsq_filter_Money">Money</string>
+    <string name="lsq_filter_Burning">Burning</string>
+    <string name="lsq_filter_Fireball">Fireball</string>
+    <string name="lsq_filter_chcomics_video">Chinese comics</string>
+    <string name="lsq_filter_lightcolor_video">Light color</string>
+    <string name="lsq_filter_uscomics_video">US comics</string>
+    <string name="lsq_filter_ink_video">Ink</string>
+    <string name="lsq_filter_monochrome_video">Monochrome</string>
+    <string name="lsq_filter_jpcomics_video">Japnese comics</string>
+
+
+    <string name="lsq_filter_SkinNatural_1">Nature</string>
+    <string name="lsq_filter_SkinFair_1">Fair</string>
+    <string name="lsq_filter_SkinLotus_1">Lotus</string>
+    <string name="lsq_filter_SkinBeckoning_1">Beckoning</string>
+    <string name="lsq_filter_SkinTender_1">Tender</string>
+    <string name="lsq_filter_SkinLeisurely_1">Leisurely</string>
+    <string name="lsq_filter_SkinRose_1">Rose</string>
+    <string name="lsq_filter_SkinWarm_1">Warm</string>
+    <string name="lsq_filter_SkinClear_1">Clear</string>
+    <string name="lsq_filter_SkinConfession_1">Confession</string>
+    <string name="lsq_filter_SkinJapanese_1">Japanese</string>
+    <string name="lsq_filter_SkinExtraordinary_1">Extraordinary</string>
+    <string name="lsq_filter_SkinHoney_1">Honey</string>
+    <string name="lsq_filter_SkinButter_1">Butter</string>
+    <string name="lsq_filter_SkinDawn_1">Dawn</string>
+    <string name="lsq_filter_SkinSummer_1">Summer</string>
+    <string name="lsq_filter_SkinSweet_1">Sweet</string>
+    <string name="lsq_filter_SkinPlain_1">Plain</string>
+    <string name="lsq_filter_SkinDusk_1">Dusk</string>
+    <string name="lsq_filter_SkinNostalgia_1">Nostalgia</string>
+    <string name="lsq_filter_group_Portrait_Video">Portrait</string>
+    <string name="lsq_filter_group_Food_Video">Food</string>
+    <string name="lsq_filter_group_Scenery_Video">Scenery</string>
+    <string name="lsq_filter_group_Sharp_Video">Sharp</string>
+    <string name="lsq_filter_group_Cartoon_ShortVideo">Cartoon</string>
+
+
+    <string name="lsq_filter_Sharp_Orange_1">Orange</string>
+    <string name="lsq_filter_Sharp_Black_1">Black</string>
+    <string name="lsq_filter_Sharp_History_1">History</string>
+    <string name="lsq_filter_Sharp_Red_1">Red</string>
+    <string name="lsq_filter_Sharp_Neon_1">Neon</string>
+    <string name="lsq_filter_Sharp_Ash_1">Ash</string>
+    <string name="lsq_filter_Sharp_Pink_1">Pink</string>
+    <string name="lsq_filter_Sharp_Past_1">Past</string>
+    <string name="lsq_filter_Sharp_Otimes_1">Otimes</string>
+    <string name="lsq_filter_Sharp_Quiet_1">Quiet</string>
+    <string name="lsq_filter_Sharp_Mottled_1">Mottled</string>
+    <string name="lsq_filter_Sharp_Messy_1">Messy</string>
+    <string name="lsq_filter_Sharp_Imprint_1">Imprint</string>
+    <string name="lsq_filter_Sharp_Nostalgia_1">Nostalgia</string>
+    <string name="lsq_filter_Sharp_Dream_1">Dream</string>
+    <string name="lsq_filter_Sharp_Contrast_1">Contrast</string>
+    <string name="lsq_filter_Sharp_Dark_1">Dark</string>
+
+
+    <string name="lsq_filter_Scenery_SNight_1">Silent night</string>
+    <string name="lsq_filter_Scenery_Flower_1">Flower</string>
+    <string name="lsq_filter_Scenery_Rain_1">Rain</string>
+    <string name="lsq_filter_Scenery_Fresh_1">Fresh</string>
+    <string name="lsq_filter_Scenery_Izu_1">Izu</string>
+    <string name="lsq_filter_Scenery_Innocence_1">Innocence</string>
+    <string name="lsq_filter_Scenery_Tale_1">Tale</string>
+    <string name="lsq_filter_Scenery_Picnic_1">Picnic</string>
+    <string name="lsq_filter_Scenery_Blue_1">Blue</string>
+    <string name="lsq_filter_Scenery_Birch_1">Birch</string>
+    <string name="lsq_filter_Scenery_Afternoon_1">Afternoon</string>
+    <string name="lsq_filter_Scenery_City_1">City</string>
+    <string name="lsq_filter_Scenery_Film_1">Film</string>
+    <string name="lsq_filter_Scenery_Silent_1">Slient</string>
+    <string name="lsq_filter_Scenery_Lautumn_1">Late autumn</string>
+    <string name="lsq_filter_Scenery_Sunrise_1">Sun rise</string>
+    <string name="lsq_filter_Scenery_Sunset_1">Sunset</string>
+    <string name="lsq_filter_Scenery_Grace_1">Grace</string>
+    <string name="lsq_filter_Scenery_Withered_1">Withered</string>
+
+
+    <string name="lsq_filter_Food_Delicious_1">Delicious</string>
+    <string name="lsq_filter_Food_Lemon_1">Lemon</string>
+    <string name="lsq_filter_Food_Light_1">Light</string>
+    <string name="lsq_filter_Food_Whisky_1">Whisky</string>
+    <string name="lsq_filter_Food_Caramel_1">Caramel</string>
+    <string name="lsq_filter_Food_Peach_1">Peach</string>
+    <string name="lsq_filter_Food_Honey_1">Honey</string>
+    <string name="lsq_filter_Food_Mangosteen_1">Mangosteen</string>
+    <string name="lsq_filter_Food_Lime_1">Lime</string>
+
+
+    <string name="lsq_filter_Portrait_Natural_1">Nature</string>
+    <string name="lsq_filter_Portrait_Pale_1">Pale</string>
+    <string name="lsq_filter_Portrait_Clear_1">Clear</string>
+    <string name="lsq_filter_Portrait_Moisten_1">Moisten</string>
+    <string name="lsq_filter_Portrait_Spring_1">Spring</string>
+    <string name="lsq_filter_Portrait_Bellflower_1">Bellflower</string>
+    <string name="lsq_filter_Portrait_Cherry_1">Cherry</string>
+    <string name="lsq_filter_Portrait_First_1">First</string>
+    <string name="lsq_filter_Portrait_Pure_1">Pure</string>
+    <string name="lsq_filter_Portrait_Bright_1">Bright</string>
+    <string name="lsq_filter_Portrait_Retro_1">Retro</string>
+    <string name="lsq_filter_Portrait_Soda_1">Soda</string>
+    <string name="lsq_filter_Portrait_Indifference_1">Indifference</string>
+    <string name="lsq_filter_Portrait_Rosy_1">Rosy</string>
+    <string name="lsq_filter_Portrait_Icream_1">Icecream</string>
+    <string name="lsq_filter_Portrait_Ruddy_1">Ruddy</string>
+    <string name="lsq_filter_Portrait_Dusk_1">Dusk</string>
+    <string name="lsq_filter_Portrait_Cream_1">Cream</string>
+    <string name="lsq_filter_Portrait_Texture_1">Texture</string>
+    <string name="lsq_filter_Portrait_Dawn_1">Dawn</string>
+    <string name="lsq_filter_Portrait_Milk_1">Milk</string>
+    <string name="lsq_filter_Portrait_Candy_1">Candy</string>
+    <string name="lsq_filter_Portrait_Warm_1">Warm</string>
+    <string name="lsq_filter_Portrait_Sweet_1">Sweet</string>
+    <string name="lsq_filter_Portrait_Fog_1">Fog</string>
+    <string name="lsq_filter_Portrait_Desserts_1">Desserts</string>
+
+
+    <string name="tab_stickers">Stickers</string>
+    <string name="tab_emojis">Emojis</string>
+
+    <string name="text">Text</string>
+    <string name="stickers">Stickers</string>
+    <string name="effects">Effects</string>
+    <string name="trim">Trim</string>
+    <string name="voiceover">Voiceover</string>
+
+
+    <!-- 滤镜 -->
+    <!-- 提示 -->
+    <string name="lsq_image_save_ok">Image saved</string>
+    <string name="new_movie_saved">Movie saved</string>
+    <string name="lsq_editor_load_error">Error on loading</string>
+    <string name="new_movie_error_saving">Error on saving</string>
+    <string name="lsq_loadvideo_failed">Failed to load the video</string>
+    <string name="lsq_record_time_invalid">Invalid recording time</string>
+    <string name="lsq_not_file">File does not exist</string>
+    <string name="Can_not_record_over_previous_voiceover">Can’t record over previous voiceover</string>
+
+    <string name="lsq_text_time_tv" translatable="false">00:00</string>
+    <string name="lsq_next">Next</string>
+    <string name="lsq_save">Save</string>
+    <string name="lsq_cancel">Cancel</string>
+
+
+    <string name="lsq_video_empty_error">Path is empty</string>
+    <string name="lsq_video_read_prepare">Preparing...</string>
+
+    <string name="lsq_text_beauty_type">Beauty</string>
+    <string name="lsq_text_cosmetic_type">Cosmetic</string>
+    <string name="lsq_text_beauty">Beauty</string>
+    <string name="lsq_sticker_text">Sticker</string>
+    <string name="lsq_text_MV">MV</string>
+
+    <!-- MV -->
+    <!-- 主页面 -->
+
+    <!-- 录音权限  -->
+    <string name="lsq_record_dialog_message">Grant audio permission</string>
+
+    <!-- 功能列表  -->
+
+    <!-- 配音音乐 -->
+    <string name="lsq_start_audiotrecord_hint">Tap or long press to record</string>
+    <string name="lsq_audioRecording_cancelrecording">Cancel recording?</string>
+    <string name="lsq_audioRecording_next">OK</string>
+    <string name="lsq_audioRecording_cancel">Cancel</string>
+
+
+    <string name="keep_original_sound">Keep origianl sound</string>
+    <string name="recommended">Recommended</string>
+    <string name="search_sounds">Search Sounds</string>
+    <string name="volume">Volume</string>
+
+
+    <string name="lsq_audio_initialization_failed_hint">Failed to recording</string>
+    <string name="lsq_audio_record_hint">\u3000\u3000Please click "Start recording" and click "Stop recording" if it is done. The recording can be played then.</string>
+    <string name="lsq_audio_pitch_hint">\u3000\u3000Please click "Start recording" and clik "Stop and play" to play it.</string>
+    <string name="lsq_audio_record_start">Start recording</string>
+    <string name="lsq_audio_record_stop">Stop recording</string>
+    <string name="lsq_audio_record_stop_and_play">Stop and play</string>
+
+    <string name="lsq_audio_record_play">Play</string>
+    <string name="lsq_audio_record_recording">Recording started</string>
+    <string name="lsq_audio_record_stopped">Recoding stopped</string>
+    <string name="lsq_audio_record_playing">Playing</string>
+    <string name="lsq_audio_record_played">Playing done</string>
+    <string name="lsq_movie_mixer_hint">\u3000\u3000Please click "Splicer" to join two videos into one. The new video can be found in the album</string>
+    <string name="lsq_movie_splicer_processing">Splicing</string>
+    <string name="lsq_movie_splicer">Splicer</string>
+    <string name="lsq_movie_splicer_success">Video spliced, please check the DCIM folder</string>
+    <string name="lsq_movie_splicer_error">Error on splicing</string>
+    <string name="lsq_movie_splicer_tips">\u3000\u3000Please set the duration on the thumbnial, then click "Cut" to apply</string>
+    <string name="lsq_movie_cut_button">Cut</string>
+    <string name="lsq_movie_cut_error">Error on cutting</string>
+    <string name="lsq_movie_cut_done">Cutting done</string>
+    <string name="lsq_select_video_hint">Please select a video</string>
+    <string name="lsq_select_image_hint">Please selecte at least 3 photos</string>
+    <string name="lsq_select_video_max">Too many videos selected</string>
+    <string name="lsq_select_include_audio">Silent video is not supported</string>
+
+
+    <string name="hold_down_to_apply_effect">Hold down to apply effect</string>
+    <string name="hold_down_to_apply_time_effect">Tap to use time warp effects</string>
+    <string name="lsq_magic_color">Color</string>
+
+    <!--文字特效-->
+    <string name="lsq_edit_text_title">Title</string>
+    <string name="lsq_edit_text_sticker_default_text">Change text</string>
+    <string name="lsq_text_style_right_to_left">Right to left</string>
+    <string name="lsq_text_style_left_to_right">Left to right</string>
+    <string name="lsq_text_style_underline">Underline</string>
+    <string name="lsq_text_style_alignleft">Align left</string>
+    <string name="lsq_text_style_alignright">Align right</string>
+    <string name="lsq_text_style_aligncenter">Align center</string>
+
+    <!-- 3.0.0 -->
+    <string name="lsq_more">More</string>
+    <string name="lsq_close">Close</string>
+    <string name="lsq_open">Open</string>
+    <string name="lsq_lighting">Flashing</string>
+    <string name="lsq_auto_focus">Auto focus</string>
+    <string name="lsq_radio_type">Aspect</string>
+    <string name="lsq_audio">Audio</string>
+    <string name="lsq_normal">Normal</string>
+    <string name="lsq_monster">Monster</string>
+    <string name="lsq_uncle">Uncle</string>
+    <string name="lsq_girl">Girl</string>
+    <string name="lsq_lolita">Lolita</string>
+    <string name="lsq_move">Move</string>
+    <string name="lsq_time">Time</string>
+    <string name="lsq_visual">Visual</string>
+    <string name="lsq_transitions">Transitions</string>
+
+    <string name="lsq_beauty_skin_reset">None</string>
+    <string name="lsq_beauty_skin_extreme">Skin extreme</string>
+    <string name="lsq_beauty_skin_precision">Skin precision</string>
+    <string name="lsq_beauty_skin_beauty">Skin beauty</string>
+    <string name="lsq_beauty_whitening">Whitening</string>
+    <string name="lsq_beauty_smoothing">Smoothing</string>
+    <string name="lsq_beauty_ruddy">Ruddy</string>
+    <string name="lsq_beauty_sharpen">Sharpen</string>
+
+    <string name="lsq_max_time_effect">Duration too long</string>
+    <string name="lsq_min_time_effect">Duration too short</string>
+    <string name="lsq_max_time_effect_tips">Max effect duration is %s seconds</string>
+    <string name="lsq_min_time_effect_tips">Min effect duration is %s seconds</string>
+
+    <string name="lsq_remove_sticker_title">Confirm to delete?</string>
+    <string name="lsq_remove_sticker_confirm">Confirm</string>
+    <string name="lsq_remove_sticker_cancel">Cancel</string>
+    <string name="lsq_clear_beauty_plastic_hit">Reset all settings?</string>
+    <string name="lsq_clear_beauty_cosmetic_hit">Delete all cosmetic?</string>
+    <string name="lsq_movie_thumb">Thumbnail</string>
+    <string name="lsq_text_cover">Cover</string>
+    <string name="lsq_movie_cut_selecttime" type="id">Selected</string>
+    <string name="min_recordTime">Recording is too shaort </string>
+    <string name="max_recordTime">Recording time is up </string>
+    <string name="lsq_capture">Capture</string>
+    <string name="lsq_click_shoot">Click to capture</string>
+    <string name="lsq_long_click_shoot">Longpress to capture</string>
+    <string name="lsq_record_completed">Recording completed</string>
+    <string name="lsq_max_audio_record_time">Max recording duration reached</string>
+    <string name="lsq_album_select_min_time">Video duration must be longer than 3 seconds</string>
+
+
+
+    <string name="new_movie_saving">Saving the movie...</string>
+    <string name="lsq_video_save_ok">Video saved</string>
+    <!-- 哈哈镜 -->
+    <string name="lsq_face_monster">Mirror</string>
+    <string name="lsq_trim_text">Trim</string>
+    <string name="lsq_trim_no">None</string>
+
+    <string name="lsq_editor_text_add">Add</string>
+    <string name="lsq_editor_text_font">Font</string>
+    <string name="lsq_editor_text_color">Color</string>
+    <string name="lsq_editor_text_transparency">Transparency</string>
+    <string name="lsq_editor_text_stroke">Stroke</string>
+    <string name="lsq_editor_text_background">Background</string>
+    <string name="lsq_editor_text_space">Space</string>
+    <string name="lsq_editor_text_align">Align</string>
+    <string name="lsq_editor_text_array">Array</string>
+    <string name="lsq_editor_text_style">Style</string>
+    <string name="lsq_italic">Italic</string>
+
+
+    <!--    4.0.0新滤镜    -->
+
+
+    <!--    美妆     -->
+
+    <string name="lsq_cosmetic_lipstick">Lipstick</string>
+    <string name="lsq_cosmetic_blush">Blush</string>
+    <string name="lsq_cosmetic_eyebrow">Eye brow</string>
+    <string name="lsq_cosmetic_eyeshadow">Eye shadow</string>
+    <string name="lsq_cosmetic_eyeliner">Eye liner</string>
+    <string name="lsq_cosmetic_eyelash">Eye lash</string>
+    <string name="lsq_cosmetic_clear_all">Clear all</string>
+
+    <string name="lsq_lipstick_matte">Matte</string>
+    <string name="lsq_lipstick_moisturizing">Moisturizing</string>
+    <string name="lsq_lipstick_moisturize">Moisturize</string>
+
+
+    <string name="lsq_eyebrow_fog">Fog</string>
+    <string name="lsq_eyebrow_root">Root</string>
+
+
+    <string name="lsq_lipstick_0">Maple</string>
+    <string name="lsq_lipstick_1">Red</string>
+    <string name="lsq_lipstick_2">Blood</string>
+    <string name="lsq_lipstick_3">Tomato</string>
+    <string name="lsq_lipstick_4">Persimmon</string>
+    <string name="lsq_lipstick_5">Orange</string>
+    <string name="lsq_lipstick_6">Coral</string>
+    <string name="lsq_lipstick_7">Pink</string>
+    <string name="lsq_lipstick_8">Plum</string>
+    <string name="lsq_lipstick_9">Rasberry</string>
+    <string name="lsq_lipstick_10">Cinnamon</string>
+    <string name="lsq_lipstick_11">Milktea</string>
+    <string name="lsq_lipstick_12">Redbean</string>
+
+
+
+
+    <string name="lsq_eyebrow_normal_black">Normal black</string>
+    <string name="lsq_eyebrow_normal_gray">Gray</string>
+    <string name="lsq_eyebrow_normal_brown">Brown</string>
+    <string name="lsq_eyebrow_willow_black">Willow black</string>
+    <string name="lsq_eyebrow_willow_gray">Willow gray</string>
+    <string name="lsq_eyebrow_willow_brown">Willow brown</string>
+    <string name="lsq_eyebrow_leaf_black">Leaf black</string>
+    <string name="lsq_eyebrow_leaf_gray">Leaf gray</string>
+    <string name="lsq_eyebrow_leaf_brown">Leaf brown</string>
+    <string name="lsq_eyeborw_peak_black">Peak black</string>
+    <string name="lsq_eyeborw_peak_gray">Peak gray</string>
+    <string name="lsq_eyeborw_peak_brown">Peak brown</string>
+    <string name="lsq_eyeborw_rough_black">Rough black</string>
+    <string name="lsq_eyebrow_curved_black">Curved black</string>
+    <string name="lsq_eyebrow_curved_gray">Curved gray</string>
+    <string name="lsq_eyebrow_curved_brown">Curved brown</string>
+    <string name="lsq_eyeborw_barbie_black">Barbie black</string>
+    <string name="lsq_eyeborw_barbie_gray">Barbie gray</string>
+    <string name="lsq_eyeborw_barbie_brown">Barbie brown</string>
+    <string name="lsq_eyeborw_peach_black">Peach black</string>
+    <string name="lsq_eyeborw_peach_gray">Peach gray</string>
+    <string name="lsq_eyeborw_peach_brown">Peach brown</string>
+    <string name="lsq_eyeborw_moon_black">Moon black</string>
+    <string name="lsq_eyeborw_moon_gray">Moon gray</string>
+    <string name="lsq_eyeborw_moon_brown">Moon brown</string>
+    <string name="lsq_eyebrow_broken_black">Broken black</string>
+    <string name="lsq_eyebrow_broken_gray">Broken gray</string>
+    <string name="lsq_eyebrow_broken_brown">Broken brown</string>
+    <string name="lsq_eyeborw_wild_black">Wild black</string>
+    <string name="lsq_eyeborw_wild_gray">Wild gray</string>
+    <string name="lsq_eyeborw_wild_brown">Wild brown</string>
+    <string name="lsq_eyebrow_european_black">Euro black</string>
+    <string name="lsq_eyebrow_european_gray">Euro gray</string>
+    <string name="lsq_eyebrow_european_brown">Euro brown</string>
+    <string name="lsq_eyebrow_round_black">Round black</string>
+    <string name="lsq_eyebrow_round_gray">Round gray</string>
+    <string name="lsq_eyebrow_round_brown">Round brown</string>
+    <string name="lsq_eyebrow_yanxi_black">Yanxi black</string>
+    <string name="lsq_eyebrow_yanxi_gray">Yanxi gray</string>
+    <string name="lsq_eyebrow_yanxi_brown">Yanxi brown</string>
+
+
+
+
+    <string name="tv_discover">Discover</string>
+    <string name="tv_favorites">Favorites</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="flip">Flip</string>
+    <string name="speed">Speed</string>
+    <string name="beauty">Beauty</string>
+    <string name="filters">Filters</string>
+    <string name="flash">Flash</string>
+    <string name="upload">Upload</string>
+    <string name="min_record_tips">Record at least 1 second</string>
+
+    <string name="lsq_cosmetic_facial">cosmetic facial</string>
+
+    <string name="current_music">Current sound:</string>
+    <string name="processing">processing...</string>
+    <string name="add_sound">Add sound</string>
+    <string name="beauty_mode_on">Beauty mode on</string>
+    <string name="beauty_mode_off">Beauty mode off</string>
+    <string name="dialog_title_discard_edits_tips">Discard your edits？</string>
+    <string name="dialog_content_discard_entire_clip_tips">If you go back now, you will lose all clips added to your video.</string>
+
+
+
+    <string name="dialog_button_discord">Discard</string>
+
+    <string name="dialog_title_discard_entire_clip">Discard entire clip？</string>
+    <string name="dialog_describe_discard_entire_clip">if you go back now, you will lose all the clips added to your video.</string>
+    <string name="dialog_button_discord_video">Discard Video</string>
+    <string name="dialog_button_start_over">Start Over</string>
+    <string name="dialog_button_save_as_draft">Save as Draft</string>
+    <string name="dialog_button_cancel">Cancel</string>
+
+    <string name="dialog_title_discard_last_clip">Discard the last clip？</string>
+    <string name="keep">Keep</string>
+
+    <string name="record_local_album_all_index">Recents</string>
+    <string name="record_local_album_video_tips">You can select 1 video</string>
+
+    <string name="font">Font</string>
+    <string name="style">Style</string>
+    <string name="color">Color</string>
+    <string name="stroke">Stroke</string>
+    <string name="background">Background</string>
+    <string name="alignment">Alignment</string>
+    <string name="direction">Direction</string>
+
+    <string name="width">Width</string>
+    <string name="opacity">Opacity</string>
+    <string name="delete">Delete</string>
+
+    <string name="lsq_congfigview_set_origin">Original sound</string>
+    <string name="lsq_congfigview_set_dubbing">Added sound</string>
+    <string name="lsq_congfigview_set_dubbingone">Track 1</string>
+    <string name="lsq_congfigview_set_dubbingtwo">Track 2</string>
+    <string name="lsq_congfigview_set_dubbingthree">Track 3</string>
+    <string name="lsq_congfigview_set_originIntensity">Original</string>
+    <string name="lsq_congfigview_set_dubbingIntensity">Dubbing</string>
+    <string name="lsq_congfigview_set_size">Size</string>
+    <string name="text_trim_tip">Tap the text sticker to set its duration</string>
+    <string name="text_trim_select_time">Selected %s last for\u0020</string>
+    <string name="drag_to_adjust_sound">Drag to adjust sound</string>
+    <string name="discard_voiceover">Discard voiceover?</string>
+    <!--    <string name="testString">TestString</string>-->
+
+    <string name="dialog_title_recover">Continue editing your video?</string>
+    <string name="dialog_content_recover">You left before saving your last video. Would you like to continue editing that video,or start a new one?</string>
+    <string name="dialog_recover_continue">Continue</string>
+    <string name="dialog_recover_new">Start new video</string>
+    <string name="post_vision">Post VISION</string>
+    <string name="save_as_draft">Save as Draft</string>
+    <string name="post_vision_btn">Post Vision</string>
+    <string name="select_cover">Select Cover</string>
+    <string name="describe_your_video">Describe your video</string>
+    <string name="none_effect">None</string>
+    <string name="video_length_cannot_exceed_5_minutes">Video length cannot exceed 5 minutes</string>
+    <string name="edit_sticker">Edit</string>
+    <string name="set_duration_sticker">Set duration</string>
+    <string name="cannot_record_over_previous_voiceover">Can’t record over previous voiceover</string>
+    <string name="lsq_begin_recording_form">Begin recording from %s</string>
+
+    <string name="discard_edits_tip_title">Are you sure you want to trim clips? Trimming clips will discard your edits.</string>
+    <string name="lsq_camera_alert_title">Permission required</string>
+    <string name="lsq_button_close">Close</string>
+    <string name="lsq_button_setting">Settings</string>
+    
+    <string name="camera_permission_title">Allow App Access to your\n Camera And Microphone.</string>
+    <string name="camera_permission_content">Access was previously denied.Please\n grant access from Settings</string>
+    <string name="camera_permission_cancel">Cancel</string>
+    <string name="camera_permission_setting">Go to Settings</string>
+    <string name="download_fail">Download Fail</string>
+    <string name="tip_text">text</string>
+    <string name="tip_stickers">stickers</string>
+    <string name="you_can_select_up_to_60_seconds">You can select up to 60 seconds</string>
+    <string name="tv_blank">\u0020\u0020\u0020\u0020\u0020</string>
+
+    <string name="you_can_upload_a_video_up_to_5_minutes_long">You can upload a video up to 5 minutes long.</string>
+    <string name="toast_stickers_limit">Up to 5 stickers and text labels.</string>
+
+
+
+
+
+    <string name="exceed_visual_effects_tip">You can apply up to 5 visual effects</string>
+    <string name="exceed_move_effects_tip">You can apply up to 5 move effects</string>
+    <string name="exceed_effects_tip">You can apply up to 8 effects in total</string>
+
+
+
+
+    <string name="lsq_left_right">左右</string>
+
+    <string name="lsq_mic_open">开启</string>
+    <string name="lsq_mic_close">关闭</string>
+
+
+    <string name="lsq_mic_layer">麦克风</string>
+    <string name="lsq_render_layer">渲染大小</string>
+    <string name="lsq_render_720P">720P</string>
+    <string name="lsq_render_1080P">1080P</string>
+</resources>

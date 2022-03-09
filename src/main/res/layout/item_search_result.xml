@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/item_search"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/iv_enter"
+        android:layout_marginStart="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/select_search"
+        />
+
+<TextView
+    android:id="@+id/tv_search_result"
+    android:layout_marginEnd="15dp"
+    android:layout_toLeftOf="@id/iv_enter"
+    android:layout_marginRight="10dp"
+    android:textSize="15sp"
+    android:layout_centerVertical="true"
+    android:textColor="@color/lsq_color_black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E8E9EF"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/lsq_back"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/lsq_nav_bar_back"
+        />
+
+
+
+
+
+
+
+    <!--    <ImageView-->
+    <!--        app:layout_constraintTop_toTopOf="@id/lsq_add_sound"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:src="@drawable/text_btm_icon"-->
+    <!--        android:layout_width="22dp"-->
+    <!--        android:layout_height="22dp"></ImageView>-->
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

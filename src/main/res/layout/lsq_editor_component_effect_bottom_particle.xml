@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <org.lasque.twsdkvideo.video_beauty.views.editor.TuSdkMovieScrollPlayLineView
+        android:id="@+id/lsq_editor_time_play_range"
+        android:layout_marginTop="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"></org.lasque.twsdkvideo.video_beauty.views.editor.TuSdkMovieScrollPlayLineView>
+
+
+
+    <FrameLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="bottom"
+            android:text="@string/hold_down_to_apply_effect"
+            android:textColor="@color/color_C4C4C4"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+        <ImageView
+            android:id="@+id/rollback_btn"
+            android:visibility="invisible"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="18dp"
+            android:layout_gravity="right"
+            android:src="@drawable/rollback_icon"
+            android:layout_width="36dp"
+            android:layout_height="24dp"></ImageView>
+
+    </FrameLayout>
+
+    <!--文字控制content-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lsq_editor_effect_time_list"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="8dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

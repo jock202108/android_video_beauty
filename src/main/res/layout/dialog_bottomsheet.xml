@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_top"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sounds"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:src="@drawable/ic_black_close" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/search_ll"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_search_bg"
+        android:layout_height="34dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_search"/>
+        <TextView
+            android:id="@+id/text111"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:text="@string/search"
+            android:textColor="#AFAFB9"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator
+        android:id="@+id/tab_layout"
+        app:default_display_counts="2"
+        app:text_size="14"
+        app:high_light_text_color="#CC0000"
+        app:normal_text_color="#6E7187"
+        app:line_color="#CC0000"
+        app:line_width="48dp"
+        app:line_size="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator>
+
+    <org.lasque.tusdk.core.view.widget.TuSdkViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lsq_color_transparent"
+        android:overScrollMode="never" />
+
+</LinearLayout>

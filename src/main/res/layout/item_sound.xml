@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/sound_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:layout_height="64dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/sound_pic_rl"
+        android:layout_width="64dp"
+        android:layout_height="64dp">
+
+        <org.lasque.tusdk.core.view.TuSdkImageView
+            android:id="@+id/img_sound"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:id="@+id/play_image"
+            android:src="@drawable/ic_play"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_likeanim"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:lottie_fileName="sound.json"
+            app:lottie_loop="true"
+            android:visibility="visible"
+            android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/progress_view"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/loading"
+                android:visibility="gone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_toLeftOf="@+id/sound_collect_rl"
+        android:layout_toEndOf="@id/sound_pic_rl">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/lsq_color_black"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"
+            android:textColor="#6E7187"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#6E7187"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sound_collect_rl"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_collect"
+            android:src="@drawable/ic_un_collect"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_use_sound"
+            android:layout_marginStart="36dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/img_use_sound"
+                android:src="@drawable/ic_use_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

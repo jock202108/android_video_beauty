@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<View
+    android:id="@+id/video_view"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+</View>
+    <include layout="@layout/lsq_record_and_editor_componet_filter_bottom_content_config_view"/>
+    <!--统一布局 下面为原xml
+    <LinearLayout
+        android:background="@drawable/editor_component_filter_bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lsq_filter_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lsq_filter_config_view"
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:layout_height="38dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="18dp"
+                    android:id="@+id/lsq_filter_reset"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/video_ic_nix"/>
+
+                <View
+                    android:background="#8A8A8A"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="16dp"></View>
+
+                <org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator
+                    android:id="@+id/lsq_filter_tabIndicator"
+                    app:text_size="13"
+                    app:line_size="2"
+                    app:line_width="5dp"
+                    app:high_light_text_color="#ffffff"
+                    app:normal_text_color="#8A8A8A"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator>
+
+            </LinearLayout>
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/lsq_filter_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+
+</LinearLayout>

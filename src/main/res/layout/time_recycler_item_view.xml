@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/item_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/effect_stroke"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:background="@drawable/shape_time_effect_stroke">
+        <RelativeLayout
+            android:id="@+id/lsq_image_layout"
+            android:layout_centerInParent="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+            <org.lasque.tusdk.core.view.TuSdkImageView
+                android:id="@+id/lsq_item_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/lsq_select_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:riv_corner_radius="8dip" />
+        </RelativeLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/lsq_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

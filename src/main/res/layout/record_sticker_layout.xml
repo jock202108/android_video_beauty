@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lsq_sticker_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_alignParentBottom="true">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_pop_up_window_bg"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/lsq_cancel_button"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="@dimen/lsq__space_10"
+                    android:src="@drawable/video_ic_nix"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/lsq_alpha_white_26"/>
+            <org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator
+                android:id="@+id/lsq_TabIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:line_size="2"
+                app:text_size="11"
+                app:high_light_text_color="#FFFFFF"
+                app:normal_text_color="#8A8A8A"
+                app:line_width="@dimen/lsq__space_20">
+
+            </org.lasque.twsdkvideo.video_beauty.views.TabPagerIndicator>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:visibility="gone"
+            android:background="@color/lsq_alpha_white_26"/>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/lsq_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.viewpager2.widget.ViewPager2>
+
+    </LinearLayout>
+
+</LinearLayout>

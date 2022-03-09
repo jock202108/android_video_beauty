@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="@color/lsq_color_transparent"/>
+            <stroke android:width="4dp" android:color="@color/lsq_color_white"/>
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp">
+        <shape>
+            <solid android:color="@color/lsq_widget_record_button_circle"/>
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:bottom="7dp"
+        android:left="7dp"
+        android:right="7dp"
+        android:top="7dp">
+        <shape>
+            <solid android:color="#CC0000"/>
+         <corners android:radius="100dp"/>
+        </shape>
+
+    </item>
+
+
+</layer-list>

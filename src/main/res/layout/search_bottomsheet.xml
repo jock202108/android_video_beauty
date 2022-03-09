@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_top"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sounds"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:src="@drawable/ic_black_close" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:text="@string/cancel"
+            android:textColor="#016EDC"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_cancel"
+            android:background="@drawable/shape_search_bg"
+            android:layout_height="34dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_search"/>
+            <org.lasque.twsdkvideo.video_beauty.views.cosmetic.YjEditText
+                android:id="@+id/mEditText"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"
+                android:focusable="true"
+                android:hint="@string/search"
+                android:textColorHint="#AFAFB9"
+                android:textSize="15sp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/lsq_color_black"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:layout_height="34dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <org.lasque.twsdkvideo.video_beauty.views.cosmetic.MyRecyclerView
+        android:id="@+id/mRv"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

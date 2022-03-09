@@ -1,0 +1,108 @@
+{
+  "categories": [
+    {
+      "categoryName": "热门",
+      "categoryNameEn": "Trending",
+      "stickers": [
+        {
+          "name": "黑天使",
+          "id": "1692",
+          "previewImage": "file:///android_asset/stickers/1692.jpeg"
+        },
+        {
+          "name": "西部牛仔",
+          "id": "1701",
+          "previewImage": "file:///android_asset/stickers/1701.jpeg"
+        },
+        {
+          "name": "skrskr",
+          "id": "1603",
+          "previewImage": "file:///android_asset/stickers/1603.jpeg"
+        },
+        {
+          "name": "圣诞09",
+          "id": "1549",
+          "previewImage": "file:///android_asset/stickers/1549.jpeg"
+        },
+        {
+          "name": "圣诞02",
+          "id": "1542",
+          "previewImage": "file:///android_asset/stickers/1542.jpeg"
+        },
+        {
+          "name": "印第安人",
+          "id": "1588",
+          "previewImage": "file:///android_asset/stickers/1588.jpeg"
+        }
+      ]
+    },
+    {
+      "categoryName": "搞笑",
+      "categoryNameEn": "Funny",
+      "stickers": [
+        {
+          "name": "口香糖",
+          "id": "1593",
+          "previewImage": "file:///android_asset/stickers/1593.jpeg"
+        },
+        {
+          "name": "哈利波特",
+          "id": "1561",
+          "previewImage": "file:///android_asset/stickers/1561.jpeg"
+        },
+        {
+          "name": "男性",
+          "id": "1585",
+          "previewImage": "file:///android_asset/stickers/1585.jpeg"
+        },
+        {
+          "name": "晕",
+          "id": "1622",
+          "previewImage": "file:///android_asset/stickers/1622.jpeg"
+        },
+        {
+          "name": "小丑",
+          "id": "1616",
+          "previewImage": "file:///android_asset/stickers/1616.jpeg"
+        }
+      ]
+    },
+    {
+      "categoryName": "萌宠",
+      "categoryNameEn": "Cute",
+      "stickers": [
+        {
+          "name": "小龙女",
+          "id": "1709",
+          "previewImage": "file:///android_asset/stickers/1709.jpeg"
+        },
+        {
+          "name": "白狐狸",
+          "id": "1602",
+          "previewImage": "file:///android_asset/stickers/1602.jpeg"
+        },
+        {
+          "name": "丛林小鹿",
+          "id": "1601",
+          "previewImage": "file:///android_asset/stickers/1601.jpeg"
+        },
+        {
+          "name": "小粉猫",
+          "id": "1573",
+          "previewImage": "file:///android_asset/stickers/1573.jpeg"
+        },
+
+        {
+          "name": "狐狸",
+          "id": "1513",
+          "previewImage": "file:///android_asset/stickers/1513.jpeg"
+        },
+        {
+          "name": "羊",
+          "id": "1512",
+          "previewImage": "file:///android_asset/stickers/1512.jpeg"
+        }
+      ]
+    }
+  ]
+}
