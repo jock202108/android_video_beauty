@@ -97,7 +97,7 @@ public class MovieRecordFullScreenActivity extends FragmentActivity implements A
 
   private static double PROCESS_WIDTH = 720;
 
-  private static TuSdkSize PREVIEW_SIZE = new TuSdkSize(720, 1280);
+  private static TuSdkSize PREVIEW_SIZE = new TuSdkSize(720, 1517);
 
   private FrameLayout mCameraView;
 

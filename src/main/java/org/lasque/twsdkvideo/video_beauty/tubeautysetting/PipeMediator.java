@@ -265,12 +265,22 @@ public class PipeMediator implements ImageConvert.ProcessProperty {
 //    if (deepAR == null) return null;
     //1. 通过ImageConvert 将Android默认的OES纹理转换为可处理的Texture2D纹理
     Image in = mImageConvert.onFrameAvailable();
+//    if (deepAR != null) {
+//      buffer.put(in.getBuffer(Image.Format.YUV_420_888));
+//      buffer.position(0);
+//      deepAR.receiveFrame(buffer, 720, 1517,
+//        180, mCameraInputOrientation.isMirrored(), DeepARImageFormat.YUV_420_888, 0);
+//    }
+
+
     if (deepAR != null) {
-      buffer.put(in.getBuffer(Image.Format.YUV_420_888));
       buffer.position(0);
-      deepAR.receiveFrame(buffer, 720, 1280,
-        180, mCameraInputOrientation.isMirrored(), DeepARImageFormat.YUV_420_888, 0);
+      buffer.put(in.getBuffer(Image.Format.NV21));
+      deepAR.receiveFrame(buffer, in.GetWidth(), in.GetHeight(),
+              180, false, DeepARImageFormat.YUV_NV21, 0);
     }
+
+
     return in;
   }
 
