@@ -19,12 +19,15 @@ import org.lasque.tusdkpulse.core.struct.TuSdkSize;
 import org.lasque.tusdkpulse.core.utils.TLog;
 import org.lasque.tusdkpulse.core.utils.ThreadHelper;
 import org.lasque.tusdkpulse.core.utils.image.ImageOrientation;
+import org.lasque.twsdkvideo.video_beauty.utils.TextureRender;
 
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import ai.deepar.ar.ARErrorType;
+import ai.deepar.ar.AREventListener;
 import ai.deepar.ar.DeepAR;
 import ai.deepar.ar.DeepARImageFormat;
 
@@ -99,6 +102,8 @@ public class PipeMediator implements ImageConvert.ProcessProperty {
    * 渲染管理器
    */
   private ImageConvert mImageConvert;
+
+  private TextureRender mOESRender;
 
   /**
    * 美颜参数管理器
@@ -201,6 +206,10 @@ public class PipeMediator implements ImageConvert.ProcessProperty {
       return new Pair<>(false, -1);
     }
 
+
+
+
+
     mSensorHelper = new SensorHelper(context);
 
     mAspect = new Pair<>(((double) aspect.getWidth()), ((double) aspect.getHeight()));
@@ -209,10 +218,96 @@ public class PipeMediator implements ImageConvert.ProcessProperty {
     mImageConvert.setAspect(aspect.getWidth(), aspect.getHeight());
     mImageConvert.setProcessProperty(this);
 
+
+
     Pair<Boolean, Integer> result = mImageConvert.requestInit();
     if (!result.first) {
       return result;
     }
+
+
+
+
+    mRenderPipe.getRenderPool().runSync(new Runnable() {
+      @Override
+      public void run() {
+        deepAR = new DeepAR(context);
+        deepAR.setLicenseKey("1ca3595bced748fd983b84e613d4fc93ff3cc1adf60581fe5bc31f4ef139dbcf5954a9e61ae8e0f8");
+        deepAR.initialize(context, new AREventListener() {
+          @Override
+          public void screenshotTaken(Bitmap bitmap) {
+
+          }
+
+          @Override
+          public void videoRecordingStarted() {
+
+          }
+
+          @Override
+          public void videoRecordingFinished() {
+
+          }
+
+          @Override
+          public void videoRecordingFailed() {
+
+          }
+
+          @Override
+          public void videoRecordingPrepared() {
+
+          }
+
+          @Override
+          public void shutdownFinished() {
+
+          }
+
+          @Override
+          public void initialized() {
+            deepAR.switchEffect("mask", getFilterPath("aviators"));
+          }
+
+          @Override
+          public void faceVisibilityChanged(boolean b) {
+
+          }
+
+          @Override
+          public void imageVisibilityChanged(String s, boolean b) {
+
+          }
+
+          @Override
+          public void frameAvailable(android.media.Image image) {
+            onFrameAvailable(image);
+          }
+
+          @Override
+          public void error(ARErrorType arErrorType, String s) {
+
+          }
+
+          @Override
+          public void effectSwitched(String s) {
+
+          }
+
+          private String getFilterPath(String filterName) {
+            if (filterName.equals("none")) {
+              return null;
+            }
+            return "file:///android_asset/" + filterName;
+          }
+        });
+        deepAR.setOffscreenRendering(mImageConvert.getRenderSize().width,mImageConvert.getRenderSize().height);
+
+
+        mOESRender = new TextureRender(false);
+        mOESRender.create(mImageConvert.getRenderSize().width,mImageConvert.getRenderSize().height,true);
+      }
+    });
 
     mAudioConvert = new AudioConvert();
 
@@ -252,11 +347,6 @@ public class PipeMediator implements ImageConvert.ProcessProperty {
   public SurfaceTexture getSurfaceTexture() {
     return mImageConvert.getSurfaceTexture();
   }
-
-  public void setDeepAR(DeepAR deepAR) {
-    this.deepAR = deepAR;
-  }
-
   /**
    * SurfaceTexture 回调中调用此方法 通知管线进行渲染
    */
@@ -274,10 +364,25 @@ public class PipeMediator implements ImageConvert.ProcessProperty {
 
 
     if (deepAR != null) {
-      buffer.position(0);
-      buffer.put(in.getBuffer(Image.Format.NV21));
-      deepAR.receiveFrame(buffer, in.GetWidth(), in.GetHeight(),
-              180, false, DeepARImageFormat.YUV_NV21, 0);
+//      deepAR.useSingleThreadedMode(true);
+
+//      buffer.position(0);
+//      buffer.put(in.getBuffer(Image.Format.NV21));
+//      deepAR.receiveFrame(buffer, in.GetWidth(), in.GetHeight(),
+//              180, false, DeepARImageFormat.YUV_NV21, 0);
+
+      Image out = mBeautyManager.processFrame(in);
+
+      mRenderPipe.getRenderPool().runSync(new Runnable() {
+        @Override
+        public void run() {
+          mOESRender.drawFrame(out.getGLTexture(),out.GetWidth(),out.GetHeight());
+          deepAR.receiveFrameExternalTexture(out.GetWidth(),out.GetHeight(),180,false,mOESRender.getTextureID());
+
+        }
+      });
+
+
     }
 
 
@@ -300,7 +405,6 @@ public class PipeMediator implements ImageConvert.ProcessProperty {
     long inputPos = System.currentTimeMillis();
     Image in = new Image(bitmap, inputPos);
     //2. 通过BeautyManager进行美颜处理
-//    Image out = mBeautyManager.processFrame(in);
     Image out = in;
     //3. 将处理后的Image显示到View上
     if (mCurrentPreviewRect == null) {
@@ -474,6 +578,10 @@ public class PipeMediator implements ImageConvert.ProcessProperty {
     return mBeautyManager;
   }
 
+  public RenderPipe getRenderPipe(){
+    return mRenderPipe;
+  }
+
   /**
    * 设置视频画面输入大小
    *
@@ -596,6 +704,10 @@ public class PipeMediator implements ImageConvert.ProcessProperty {
     mImageConvert.release();
     mBeautyManager.release();
     mRenderPipe.release();
+
+    deepAR.setAREventListener(null);
+    deepAR.release();
+    deepAR = null;
 
     isReady = false;
   }

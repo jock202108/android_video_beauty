@@ -82,7 +82,7 @@ import ai.deepar.ar.DeepAR;
 import ai.deepar.ar.DeepARPixelFormat;
 
 
-public class MovieRecordFullScreenActivity extends FragmentActivity implements AREventListener {
+public class MovieRecordFullScreenActivity extends FragmentActivity {
 
   public class VideoFragmentItem {
     public String path;
@@ -170,7 +170,6 @@ public class MovieRecordFullScreenActivity extends FragmentActivity implements A
 
   private AudioRecord mAudioRecord;
 
-  private DeepAR deepAR;
   private ListenableFuture<ProcessCameraProvider> cameraProviderFuture;
 
   private SurfaceTexture surfaceTexture;
@@ -450,14 +449,14 @@ public class MovieRecordFullScreenActivity extends FragmentActivity implements A
 
   private String[] getRequiredPermissions() {
     String[] permissions = new String[]{
-      Manifest.permission.READ_EXTERNAL_STORAGE,
-      Manifest.permission.WRITE_EXTERNAL_STORAGE,
-      Manifest.permission.CAMERA,
-      Manifest.permission.RECORD_AUDIO,
-      Manifest.permission.READ_PHONE_STATE,
-      Manifest.permission.ACCESS_FINE_LOCATION,
-      Manifest.permission.ACCESS_COARSE_LOCATION,
-      Manifest.permission.ACCESS_WIFI_STATE
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.CAMERA,
+            Manifest.permission.RECORD_AUDIO,
+            Manifest.permission.READ_PHONE_STATE,
+            Manifest.permission.ACCESS_FINE_LOCATION,
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_WIFI_STATE
     };
 
     return permissions;
@@ -542,7 +541,7 @@ public class MovieRecordFullScreenActivity extends FragmentActivity implements A
         String msg = TuSdkContext.getString("lsq_camera_no_access", ContextUtils.getAppName(MovieRecordFullScreenActivity.this));
 
         TuSdkViewHelper.alert(permissionAlertDelegate, MovieRecordFullScreenActivity.this, TuSdkContext.getString("lsq_camera_alert_title"),
-          msg, TuSdkContext.getString("lsq_button_close"), TuSdkContext.getString("lsq_button_setting")
+                msg, TuSdkContext.getString("lsq_button_close"), TuSdkContext.getString("lsq_button_setting")
         );
       }
     }
@@ -555,7 +554,7 @@ public class MovieRecordFullScreenActivity extends FragmentActivity implements A
     @Override
     public void onAlertConfirm(AlertDialog dialog) {
       Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-        Uri.fromParts("package", MovieRecordFullScreenActivity.this.getPackageName(), null));
+              Uri.fromParts("package", MovieRecordFullScreenActivity.this.getPackageName(), null));
       intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
       startActivity(intent);
     }
@@ -574,17 +573,17 @@ public class MovieRecordFullScreenActivity extends FragmentActivity implements A
     setContentView(R.layout.activity_new_record_full_screen);
     Engine engine = Engine.getInstance();
     engine.init(null);
-    initializeDeepAR();
     if (PermissionUtils.hasRequiredPermissions(this, getRequiredPermissions())) {
-      mSensorHelper = new SensorHelper(this);
       init();
     } else {
       PermissionUtils.requestRequiredPermissions(this, getRequiredPermissions());
     }
+//    initializeDeepAR();
+//    deepAR.setOffscreenRendering(PREVIEW_SIZE.width, PREVIEW_SIZE.height);
+
     thumbnail = findViewById(R.id.thumbnail);
 
 //    deepAR.changeLiveMode(true);
-    deepAR.setOffscreenRendering(PREVIEW_SIZE.width, PREVIEW_SIZE.height);
 
     SurfaceView arView = findViewById(R.id.surface);
 
@@ -943,9 +942,7 @@ public class MovieRecordFullScreenActivity extends FragmentActivity implements A
 
     Engine.getInstance().release();
 
-    deepAR.setAREventListener(null);
-    deepAR.release();
-    deepAR = null;
+
 
   }
 
@@ -968,76 +965,6 @@ public class MovieRecordFullScreenActivity extends FragmentActivity implements A
   private String getTempOutputPath() {
     String tempPath = TuSdkContext.getAppCacheDir("recordCache", false).getAbsolutePath() + "/camera_temp" + System.currentTimeMillis() + ".mp4";
     return tempPath;
-  }
-
-  private void initializeDeepAR() {
-    deepAR = new DeepAR(this);
-    deepAR.setLicenseKey("1ca3595bced748fd983b84e613d4fc93ff3cc1adf60581fe5bc31f4ef139dbcf5954a9e61ae8e0f8");
-    deepAR.initialize(this, this);
-//    deepAR.setOffscreenRendering(PREVIEW_SIZE.width, PREVIEW_SIZE.height);
-//    setupCamera();
-  }
-
-  @Override
-  public void screenshotTaken(Bitmap bitmap) {
-
-  }
-
-  @Override
-  public void videoRecordingStarted() {
-
-  }
-
-  @Override
-  public void videoRecordingFinished() {
-
-  }
-
-  @Override
-  public void videoRecordingFailed() {
-
-  }
-
-  @Override
-  public void videoRecordingPrepared() {
-
-  }
-
-  @Override
-  public void shutdownFinished() {
-
-  }
-
-  @Override
-  public void initialized() {
-    Log.d("XXXX", "initialized: ");
-    mPipeMediator.setDeepAR(deepAR);
-    deepAR.switchEffect("mask", getFilterPath("aviators"));
-  }
-
-  @Override
-  public void faceVisibilityChanged(boolean b) {
-
-  }
-
-  @Override
-  public void imageVisibilityChanged(String s, boolean b) {
-
-  }
-
-  @Override
-  public void frameAvailable(android.media.Image image) {
-    mPipeMediator.onFrameAvailable(image);
-  }
-
-  @Override
-  public void error(ARErrorType arErrorType, String s) {
-    Log.d("XXXX", "error: ");
-  }
-
-  @Override
-  public void effectSwitched(String s) {
-
   }
 
   private String getFilterPath(String filterName) {
